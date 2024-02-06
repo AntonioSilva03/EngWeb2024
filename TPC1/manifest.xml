@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<doc>
+    <meta>
+        <title>TPC1: Mapa das Ruas de Braga</title>
+        <date>2024-02-06</date>
+        <author>
+            <id>a100533</id>
+            <nome>António Filipe Castro Silva</nome>
+        </author>
+        <uc>
+            <sigla>EW2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Para este TPC, utilizou-se o dataset com imagens(fotos atuais das ruas com uma determinada vista e fotos de maquetas antigas das mesmas ruas) e ficheiros XML com informações sobre  60 ruas de Braga fornecido pelo docente.</p>
+        <p>Este dataset foi utilizado para produzir um website que apresenta uma página inicial com um índice das ruas ordenada alfabeticamente. Ao clicarmos numa das ruas, acede-se à página individual da rua onde podemos consultar toda a informação sobre esta. Em cada página também haverá um link para voltar ao índice inicial.</p>
+        <p>Terceiro parágrafo com <url>link</url><texto>url embutido</texto></p>
+    </resumo>
+    <resultados>
+        <resultado>resultado 1</resultado>
+        <resultado>resultado 2</resultado>
+    </resultados>
+</doc>
