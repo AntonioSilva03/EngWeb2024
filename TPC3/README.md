@@ -1,4 +1,4 @@
-# TPC2: Página de uma escola de música com json-server
+# TPC2: Página sobre filmes americanos com json-server e modificação do json original
 ## 2024-03-05
 
 ## Autor:
