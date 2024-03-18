@@ -1,0 +1,28 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-blue 
+            h1 #{titulo}
+        form.w3-container(method='POST')
+            fieldset
+                label ID 
+                input.w3-input.w3-round(type='text', name='id', value=compositor.id, readonly)
+                label Nome 
+                input.w3-input.w3-round(type='text', name='nome', value=compositor.nome)
+                label Bio 
+                input.w3-input.w3-round(type='text', name='bio', value=compositor.bio)
+                label Data de Nascimento 
+                input.w3-input.w3-round(type='text', name='dataNasc', value=compositor.dataNasc)
+                label Data de Óbito 
+                input.w3-input.w3-round(type='text', name='dataObito', value=compositor.dataObito)
+                label Período
+                input.w3-input.w3-round(type='text', name='periodo', value=compositor.periodo)
+            br
+            button.w3-btn.w3-purple.w3-mb-2(type='submit') Registar Alterações
+        
+        footer.w3-container.w3-blue
+            h5 
+                span [ 
+                    a(href="/compositores") Voltar à lista de compositores
+                span ]

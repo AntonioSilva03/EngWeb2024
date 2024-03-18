@@ -1,0 +1,31 @@
+extends layout 
+
+block content
+    .w3-card-4
+        header.w3-container.w3-blue
+            h1 #{titulo} 
+            a(href="/compositores/add") Novo Compositor
+        .w3-container
+            table.w3-table-all
+                tr
+                    th ID
+                    th Nome 
+                    th Ações
+                each item in Compositores
+                    tr
+                        td= item.id
+                        td
+                            a(href="/compositores/" + item.id )= item.nome
+                        td
+                            span [
+                                a(href="/compositores/edit/" + item.id) Editar
+                            span ] 
+                            span [
+                                a(href="/compositores/delete/" + item.id) Apagar
+                            span ]
+        
+        footer.w3-container.w3-blue
+            h5 
+                span [ 
+                    a(href="/") Voltar à página inicial 
+                span ]

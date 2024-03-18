@@ -1,0 +1,25 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-blue
+            h1 #{titulo}
+        .w3-container 
+                span ID: #{compositor.id}
+                br
+                span Biografia: #{compositor.bio}
+                br
+                span Data de Nascimento: #{compositor.dataNasc}
+                br
+                span Data de óbito: #{compositor.dataObito}
+                br
+                span [
+                    a(href=`/periodos/${compositor.periodo}`) Período: #{compositor.periodo}
+                span ]
+                br
+        
+        footer.w3-container.w3-blue
+            h5 
+                span [ 
+                    a(href="/compositores") Voltar à lista de compositores
+                span ]
