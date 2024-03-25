@@ -1,0 +1,18 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-blue 
+            h1 #{titulo}
+        form.w3-container(method="POST")
+            fieldset 
+                legend Dados do novo período
+                label(for="nome") Nome
+                input.w3-input.w3-round(type="text", name="nome", required)
+            br
+            button.w3-btn.w3-purple.w3-mb-2(type="submit") Registar novo período
+        footer.w3-container.w3-blue
+            h5 
+                span [ 
+                    a(href="/periodos") Voltar à lista de períodos
+                span ]
