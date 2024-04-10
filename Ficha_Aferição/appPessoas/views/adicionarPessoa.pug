@@ -1,0 +1,98 @@
+extends layout 
+
+block content
+    .w3-card-4
+        header.w3-container.w3-blue 
+            h1 #{titulo}
+        form.w3-container(method="POST")
+            fieldset
+                legend Dados da nova pessoa
+                div
+                    label(for="nome") Nome: 
+                    input(type="text", name="nome", id="nome")
+                div
+                    label(for="idade") Idade: 
+                    input(type="number", name="idade", id="idade")
+                div
+                    label(for="sexo") Sexo: 
+                    input(type="text", name="sexo", id="sexo")
+                div
+                    label(for="cidade") Cidade: 
+                    input(type="text", name="cidade", id="cidade")
+                div
+                    label(for="distrito") Distrito: 
+                    input(type="text", name="distrito", id="distrito")
+                div
+                    label(for="BI") BI: 
+                    input(type="text", name="BI", id="BI")
+                div
+                    label(for="CC") CC: 
+                    input(type="text", name="CC", id="CC")
+                div
+                    label(for="descricao") Descrição: 
+                    input(name="descricao", id="descricao")
+                div
+                    label(for="profissao") Profissão: 
+                    input(type="text", name="profissao", id="profissao")
+                div
+                    label(for="party_abbr") Partido Político(abreviatura): 
+                    input(type="text", name="party_abbr", id="party_abbr")
+                div
+                    label(for="party_name") Partido Político(nome): 
+                    input(type="text", name="party_name", id="party_name")
+                div
+                    label(for="religiao") Religião: 
+                    input(type="text", name="religiao", id="religiao")
+                div
+                    label(for="desportos") Desportos: 
+                    input(type="text", name="desportos", id="desportos")
+                div
+                    label(for="animais") Animais: 
+                    input(type="text", name="animais", id="animais")
+                div
+                    label(for="figura_publica_pt") Figura Pública PT: 
+                    input(type="text", name="figura_publica_pt", id="figura_publica_pt")
+                div
+                    label(for="marca_carro") Marca do Carro: 
+                    input(type="text", name="marca_carro", id="marca_carro")
+                div
+                    label(for="destinos_favoritos") Destinos Favoritos: 
+                    input(type="text", name="destinos_favoritos", id="destinos_favoritos")
+                div
+                    label Atributos
+                    div
+                        label(for="fumador") Fumador: 
+                        input(type="checkbox", name="fumador", id="fumador")
+                    div
+                        label(for="gosta_cinema") Gosta de Cinema: 
+                        input(type="checkbox", name="gosta_cinema", id="gosta_cinema")
+                    div
+                        label(for="gosta_viajar") Gosta de Viajar: 
+                        input(type="checkbox", name="gosta_viajar", id="gosta_viajar")
+                    div
+                        label(for="acorda_cedo") Acorde Cedo: 
+                        input(type="checkbox", name="acorda_cedo", id="acorda_cedo")
+                    div
+                        label(for="gosta_ler") Gosta de Ler: 
+                        input(type="checkbox", name="gosta_ler", id="gosta_ler")
+                    div
+                        label(for="gosta_musica") Gosta de Música: 
+                        input(type="checkbox", name="gosta_musica", id="gosta_musica")
+                    div
+                        label(for="gosta_comer") Gosta de Comer: 
+                        input(type="checkbox", name="gosta_comer", id="gosta_comer")
+                    div
+                        label(for="gosta_animais_estimacao") Gosta de Animais de Estimação: 
+                        input(type="checkbox", name="gosta_animais_estimacao", id="gosta_animais_estimacao")
+                    div
+                        label(for="gosta_dancar") Gosta de Dançar: 
+                        input(type="checkbox", name="gosta_dancar", id="gosta_dancar")
+                    div
+                        label(for="comida_favorita") Comida Favorita: 
+                        input(type="text", name="comida_favorita", id="comida_favorita")
+            button.w3-btn.w3-purple.w3-mb-2(type="submit") Registar nova pessoa
+        footer.w3-container.w3-blue
+            h5 
+                span [ 
+                    a(href="/pessoas") Voltar à lista de pessoas
+                span ]
